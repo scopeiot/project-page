@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body{
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+img{
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 5px;
+}
+.container {
+  position: relative;
+  padding: 10px;
+  display: block;
+  width: 90%;
+  height: 90%;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 90%;
+  width: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+  border-radius: 20px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <h1>Scope IOT Projects</h1>
+
+    <div class="wrapper">
+        <div class="container"><a href="https://io.adafruit.com/scopeio/dashboards/attendance-system" target = 1><img src="images/img7.jpeg"></a>
+	<div class="overlay">
+    	<div class="text">Attendance System</div>
+  	</div></div>
+        <div class="container"><a href="https://io.adafruit.com/scopeio/dashboards/iot-robot" target = 1><img src="images/img5.jpg"></a>
+	<div class="overlay">
+    	<div class="text">IOT Robot</div>
+  	</div></div>
+        <div class="container"><a href="https://io.adafruit.com/scopeio/dashboards/smart-dustbin" target = 1><img src="images/img3.jpg"></a>
+	<div class="overlay">
+    	<div class="text">Smart Dustbin</div>
+  	</div></div>        
+	<div class="container"><a href="https://io.adafruit.com/scopeio/dashboards/smart-overhead-tank" target = 1><img src="images/img8.jpg"></a>
+	<div class="overlay">
+    	<div class="text">Smart Overhead Tank</div>
+  	</div></div>
+        <div class="container"><a href="https://io.adafruit.com/scopeio/dashboards/smart-irrigation" target = 1><img src="images/img9.jpg"></a>
+	<div class="overlay">
+    	<div class="text">Smart Irrigation System</div>
+  	</div></div>
+        <div class="container"><a href="https://www.google.com"><img src="images/img3.jpg" target = 1></a>
+	<div class="overlay">
+    	<div class="text">Testing</div>
+  	</div></div>
+    </div>
+</body>
+
+</html>
